@@ -5,8 +5,6 @@ export const ja = {
         'learn-about-placeholder': '素晴らしい {lastYear} を過ごせました。{currentYear} も素晴らしいものになるでしょう',
         'linesOfCode': 'コード行はありません | 1 行のコード |コードの {count} 行'
     },
-    "repository-intro": "このデモのコードはすべて次の場所にあります。",
-    "repository": "リポジトリ",
     "common": {
         "save": "保存",
         "cancel": "キャンセル"
@@ -16,5 +14,7 @@ export const ja = {
         "name-placeholder": "場所に入る",
         "place": "場所",
         "place-placeholder": "場所に入る",
-    }
+    },
+    repo: 'リポジトリ',
+    repoText: 'このデモのコードは、この {0} から読むことができます。リポジトリにスターを付けることを忘れないでください。'
 }
