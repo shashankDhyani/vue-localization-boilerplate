@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import i18n from './i18n'
 const translate = (e) => {
@@ -16,13 +16,8 @@ const translate = (e) => {
         <option value="es" class="dropdown-item">Spanish</option>
         <option value="ja" class="dropdown-item">Japanese</option>
       </select>
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
     </div>
   </header>
-
   <RouterView />
 </template>
 

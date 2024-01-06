@@ -1,4 +1,5 @@
 <script setup>
+import i18n from '@/i18n';
 defineProps({
   msg: {
     type: String,
@@ -6,13 +7,18 @@ defineProps({
   }
 })
 </script>
-
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
       {{ $t('app.description') }}
     </h3>
+    <div class="AvailableLanguages">
+      <h3>We are supporting {{ i18n.global.availableLocales.length }} Languages</h3>
+    </div>
+    <li :key="lang" v-for="lang in i18n.global.availableLocales">
+      {{ lang }}
+    </li>
   </div>
 </template>
 
